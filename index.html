@@ -72,26 +72,67 @@
       sumate a este proceso colectivo. Tu aporte es clave para seguir construyendo una facultad y una universidad 
       más participativas, justas y comprometidas.
     </p>
-    
-    
-    <div class="mt-8">
-      <a href="#participa" class="px-6 py-3 rounded-2xl text-white text-lg font-bold" 
-         style="background: var(--brand);">
-         Dejá tu idea ahora
-      </a>
-    </div>
 
-    <div class="mt-8 text-slate-700 text-lg">
-      <p>Porque en la UNIÓN 🤝</p>
-      <p>Tu voz suma 🗣️</p>
-      <p>Tu opinión Cuenta 👍🏼</p>
-    </div>
-    <div class="mt-6 text-slate-500 text-sm">
-      #GraduadosFACEN · #LaUniónNosFortalece · #FACENesDeTodos
-    </div>
-  </div>
-</section>
-```
+  <!-- Asegúrate de incluir Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+<div class="mt-8">
+  <a href="#participa" class="cta-button">
+    <i class="fas fa-arrow-down arrow"></i>
+    Dejá tu idea ahora
+  </a>
+</div>
+
+<style>
+  :root {
+    --brand: #28a745; /* Verde principal */
+    --brand-dark: #218838; /* Verde más oscuro */
+  }
+
+  .cta-button {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 30px;
+    border-radius: 50px;
+    background: var(--brand);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+
+  .cta-button .arrow {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .cta-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: var(--brand-dark);
+  }
+
+  .cta-button:hover .arrow {
+    transform: translateY(6px);
+    color: #FFD700; /* Color dorado al hacer hover */
+  }
+
+  /* Para asegurar que la flecha se mueva suavemente */
+  .cta-button:active {
+    transform: translateY(0);
+  }
+</style>
+
+
   <!-- QUIÉNES SOMOS -->
   <section id="quienes" class="py-10">
     <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-start">

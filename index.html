@@ -73,7 +73,7 @@
       más participativas, justas y comprometidas.
     </p>
 
-  <!-- Asegúrate de incluir Font Awesome -->
+<!-- Asegúrate de incluir Font Awesome -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 
@@ -82,12 +82,19 @@
     <i class="fas fa-arrow-down arrow"></i>
     Dejá tu idea ahora
   </a>
+  <!-- Mensaje debajo del botón -->
+  <div class="cta-subtext">
+    <p><span class="icon"><i class="fas fa-handshake"></i></span> Porque en la UNIÓN 🤝</p>
+    <p><span class="icon"><i class="fas fa-comment-alt"></i></span> Tu voz suma 🗣️</p>
+    <p><span class="icon"><i class="fas fa-thumbs-up"></i></span> Tu opinión Cuenta 👍🏼</p>
+  </div>
 </div>
 
 <style>
   :root {
     --brand: #28a745; /* Verde principal */
     --brand-dark: #218838; /* Verde más oscuro */
+    --text-color: #333; /* Color del texto */
   }
 
   .cta-button {
@@ -129,6 +136,29 @@
   /* Para asegurar que la flecha se mueva suavemente */
   .cta-button:active {
     transform: translateY(0);
+  }
+
+  /* Estilo para el texto debajo del botón */
+  .cta-subtext {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: var(--text-color);
+  }
+
+  .cta-subtext p {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+
+  .cta-subtext .icon {
+    margin-right: 8px;
+    color: var(--brand);
+  }
+
+  .cta-subtext .icon i {
+    font-size: 20px;
   }
 </style>
 
